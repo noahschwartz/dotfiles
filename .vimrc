@@ -61,5 +61,3 @@ set hlsearch
 set number
 
 autocmd BufWritePre * %s/\s\+$//e
-au BufRead,BufNewFile *.yml set filetype=ansible
-au BufRead,BufNewFile *.yaml set filetype=ansible
