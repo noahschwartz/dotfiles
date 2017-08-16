@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'moria'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'elzr/vim-json'
@@ -17,8 +17,9 @@ filetype plugin indent on    " required
 map , :tabprevious<cr>
 map . :tabnext<cr>
 
-let moria_style='black'
-color moria
+syntax enable
+let background='dark'
+color solarized
 
 set nowrap
 
@@ -31,7 +32,6 @@ set complete-=i
 set complete-=t
 
 set history=1000
-syntax enable
 
 set formatoptions=croq
 
